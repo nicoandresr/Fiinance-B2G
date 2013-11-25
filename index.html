@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html manifest="fiinance.appcache">
+<head>
+    <meta charset="utf-8">
+    <title>Fiinance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body role="application" onload="load()">
+    <section data-type="sidebar">
+        <header>
+            <h1>
+                Fiinance</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Balance</a></li>
+                <li><a href="javascript:void(0)">Cuentas</a></li>
+                <li><a href="javascript:void(0)">Etiquetas</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="drawer" role="region">
+        <header>
+            <a href="#"><span class="icon icon-menu">hide sidebar </span></a><a href="#drawer"><span class="icon icon-menu">show sidebar </span></a>
+            <menu type="toolbar">
+                <a href="add.html">
+                    <span class="icon icon-add">Agregar </span>
+                </a>
+            </menu>
+            <h1>
+                Balance</h1>
+        </header>
+        <div role="main">
+            <header>
+                <h2>
+                    <b id="balance"></b>&nbsp;<span id="month"></span>
+                </h2>
+            </header>
+        </div>
+    </section>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
